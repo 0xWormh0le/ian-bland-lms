@@ -1,0 +1,343 @@
+.courselist .card-footer {
+  background-color: #fff;
+}
+.courselist a {
+  color: #23282c;
+}
+.courselist a:hover {
+  text-decoration:none;
+}
+.courselist a:hover > .card {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.overflow-hidden {
+    overflow:hidden!important;
+}
+
+.courselist a:hover > h5 {
+  color: #20a8d8;
+}
+.courselist .image {
+  padding: 0;
+  text-align: center;
+}
+.courselist .image img {
+  height: 165px;
+  width: 100%;
+  text-align:center;
+  vertical-align:top;
+}
+
+.courselist .image:after, .image:before {
+    position:absolute;
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.courselist .image:after {
+    content:'\A';
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(0,0,0,0.6);
+}
+.courselist .image:before {
+    content: attr(data-content);
+    width:100%;
+    color:#20a8d8;
+    z-index:1;
+    bottom:0;
+    padding:.75rem 1.25rem;
+    text-align:center;
+    background:#fff;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+.courselist .image:hover:after, .image:hover:before {
+    opacity:1;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.select2-container--default .select2-selection--single,
+.select2-container--default .select2-selection--multiple,
+.select2-container--default.select2-container--focus .select2-selection--multiple {
+  border: 1px solid #e4e7ea;
+  min-height: 40px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: #5c6873;
+  padding: .375rem .9rem;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 7px;
+}
+
+.CodeMirror-linenumber {
+    min-width: 30px;
+}
+
+.card-transparent {
+  background: transparent;
+}
+.card-transparent .card-body {
+  padding: 1.25rem 0;
+  padding-bottom: 0;
+}
+
+.circle-progress {
+  margin-top: -48px;
+  width: 100px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+.circle-progress>canvas {
+    background: #fff;
+    border-radius: 50%;
+}
+
+.circle-progress strong {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+
+.searchbox {
+    margin:0;
+  /*  margin-top: 10px; */
+    padding: 0;
+}
+
+.searchbox .input-group {
+    padding: 0;
+}
+
+.searchbox .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 6px;
+    padding-left: 8px \9;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.searchbox button {
+    border: 0;
+    background: none;
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#5c6873;
+}
+
+.search-query:focus + button {
+    z-index: 0;
+}
+
+.search-query:focus {
+    z-index: 0 !important;
+}
+
+.badge-completed {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+  background-color: #4dbd74;
+  border-radius: 0 0 0 1rem;
+  opacity: .8;
+}
+
+.badge-overdue {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  padding: 10px;
+  background-color: #CD5C5C;
+  border-radius: 0 0 0 1rem;
+  opacity: .6;
+}
+
+a.toggleclass, a.toggleclass:hover {
+  color: #23282c !important;
+  text-decoration: none;
+}
+
+.jstree-default .jstree-clicked {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.jstree-default .jstree-checkbox,
+.jstree-default .jstree-checkbox:hover,
+.jstree-default .jstree-anchor>.jstree-undetermined,
+.jstree-default .jstree-anchor>.jstree-undetermined:hover {
+    background: url(../img/unchecked.png) no-repeat;
+    background-position: 0;
+}
+
+.jstree-default.jstree-checkbox-selection .jstree-clicked>.jstree-checkbox, .jstree-default .jstree-checked>.jstree-checkbox,
+.jstree-default.jstree-checkbox-selection .jstree-clicked>.jstree-checkbox:hover, .jstree-default .jstree-checked>.jstree-checkbox:hover {
+    background: url(../img/checked.png) no-repeat;
+    background-position: 0;
+}
+
+.circle-icon {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 50%;
+    background: #20a8d8;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 26px;
+}
+.table a:hover {
+  text-decoration: none;
+}
+
+.timeline {
+  margin: 20px 0;
+  padding: 0;
+  border-top: 2px solid #428bca;
+  list-style: none;
+}
+
+.timeline-step {
+  float: left;
+  width: 50%;
+  padding-top: 30px;
+  position: relative;
+}
+.timeline-step:first-of-type:before, .timeline-step:last-of-type:before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  top: -2px;
+  left: 0;
+}
+.timeline-step:last-of-type:before {
+  left: 50%;
+}
+.timeline-step:hover .timeline-step-label {
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  height: auto;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-width: 1px;
+  bottom: 100%;
+}
+.timeline-step:hover .timeline-step-label:before, .timeline-step:hover .timeline-step-label:after {
+  display: block;
+}
+
+.timeline-step-label {
+  opacity: 0;
+  height: 0;
+  padding: 0;
+  font-size: 0;
+  border-width: 0;
+  -webkit-transform: rotate(30deg);
+  width: 100px;
+  margin: 0 0 24px -55px;
+  border-style: solid;
+  border-color: #428bca;
+  background: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transition: bottom 0.1s ease-in-out, opacity 0.1s ease-in-out, -webkit-transform 0.1s ease-in-out;
+}
+.timeline-step-label:before, .timeline-step-label:after {
+  display: none;
+  content: "";
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+}
+.timeline-step-label:before {
+  border-top-color: #428bca;
+  border-width: 8px;
+  margin-left: -8px;
+}
+.timeline-step-label:after {
+  border-top-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.timeline-step-content {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.timeline-step-title {
+  display: block;
+  width: 100%;
+  padding: 30px 0 0;
+  font-size: 12px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+}
+
+.timeline-step-marker {
+  width: 30px;
+  height: 30px;
+  margin-left: -16px;
+  border: 4px solid #428bca;
+  background: #428bca;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #fff;
+  text-align: center;
+  line-height: 22px;
+  font-size: 18px;
+  font-style: normal;
+  position: absolute;
+  top: -16px;
+  left: 50%;
+
+}
+
+.multiselect.dropdown-toggle {
+  text-align: left;
+}
+.multiselect.dropdown-toggle::after {
+  position: absolute;
+  left: 90%;
+  top: 45%;
+}
+.multiselect-container {
+  width: 100%;
+}
+.multiselect-container>li>a>label {
+  padding: 3px 10px 3px 10px;
+}

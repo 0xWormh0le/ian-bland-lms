@@ -1,0 +1,119 @@
+<html>
+<head>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js" ></script>
+
+  <link href="//vjs.zencdn.net/5.8.0/video-js.css" rel="stylesheet">
+
+  <!-- If you'd like to support IE8 -->
+  <script src="//vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+
+<script type="text/javascript" src="SCORM_API_wrapper.js"></script>
+
+
+
+<script type="text/javascript">
+
+//creating shortcut for less verbose code
+
+var scorm = pipwerks.SCORM;
+
+function init(){
+	//Specify SCORM 1.2:
+	scorm.version = "1.2";
+	show("Initializing course.");
+	var callSucceeded = scorm.init();
+	show("Call succeeded? " +callSucceeded);
+}
+
+function send(){
+	var field = document.getElementById("userText"),
+		value = "Placeholder text";
+
+	if(field.value !== null && field.value !== ""){
+		value = field.value;
+	}
+	set('cmi.suspend_data', value);
+}
+
+function set(param, value){
+	show("Sending: '" +value +"'");
+	var callSucceeded = scorm.set(param, value);
+	show("Call succeeded? " +callSucceeded);
+}
+
+function get(param){
+	var value = scorm.get(param);
+	show("Received: '" +value +"'");
+}
+
+function complete(){
+	show("Setting course status to 'completed'.");
+	var callSucceeded = scorm.set("cmi.core.lesson_status", "completed");
+	scorm.set("cmi.core.score.raw", "100");
+	scorm.set("cmi.core.score.max", "100");
+	scorm.set("cmi.core.score.min", "0");
+	show("Call succeeded? " +callSucceeded);
+}
+
+function end(){
+	show("Terminating connection.");
+	var callSucceeded = scorm.quit();
+	show("Call succeeded? " +callSucceeded);
+}
+
+function show(msg){
+	console.log(msg);
+	//Can also show data using pipwerks.UTILS.trace
+	pipwerks.UTILS.trace(msg);
+}
+
+window.onload = function (){
+	init();
+}
+
+window.onunload = function (){
+	end();
+}
+
+</script>
+
+ <script src="//vjs.zencdn.net/5.8.0/video.js"></script>
+
+
+<script>
+ $( document ).ready(function() { 
+  	videojs('#my-video')
+		.on("ended", complete)
+		.on("timeupdate", function(){
+		   set("cmi.core.lesson_location", this.currentTime());
+		});
+
+	setInterval(scorm.save, 30000);
+  });
+
+</script>
+
+<style class="vjs-styles-dimensions">
+      .my-video-dimensions {
+        width: %%WIDTH%%;
+        height: %%HEIGHT%%;
+      }
+
+      .my-video-dimensions.vjs-fluid {
+        padding-top: 74.64788732394366%;
+      }
+ </style>
+
+<body style="margin: 0;">
+  <video class="video-js vjs-default-skin" id="my-video" autoplay controls preload="auto" width="%%WIDTH%%" height="%%HEIGHT%%"
+  data-setup="{}">
+    <source src="%%VIDNAME%%" type='video/mp4'>
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href="//videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+</body>
+</html>

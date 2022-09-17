@@ -1,0 +1,21 @@
+{
+    "/scripts/courses/index.js": "/scripts/courses/index.js?id=a9f24942eec3d4ab2fc1",
+    "/scripts/dashboard/client.js": "/scripts/dashboard/client.js?id=c41b6beec7029893a050",
+    "/css/login.css": "/css/login.css?id=1a8c9edbc15ddc516fcb",
+    "/scripts/dashboard/learner.js": "/scripts/dashboard/learner.js?id=a4fdd0f88f8296c0a84a",
+    "/scripts/email-setup/index.js": "/scripts/email-setup/index.js?id=a446bc0380e53d905ecb",
+    "/scripts/my-courses/details.js": "/scripts/my-courses/details.js?id=54f514c9640bf07a3f8d",
+    "/scripts/my-courses/index.js": "/scripts/my-courses/index.js?id=967481c35d6d4b0c02c4",
+    "/scripts/reports/index.js": "/scripts/reports/index.js?id=c593068aa1aa00fb8d6b",
+    "/scripts/reports/log.js": "/scripts/reports/log.js?id=c0a2c032a6c37884390b",
+    "/scripts/reports/report.js": "/scripts/reports/report.js?id=46b64ac826b5241f6241",
+    "/scripts/roles/index.js": "/scripts/roles/index.js?id=30e67317846131b4dbae",
+    "/scripts/sysconfig/smtp-account.js": "/scripts/sysconfig/smtp-account.js?id=47d660008e6a6dd86d67",
+    "/scripts/teams/index.js": "/scripts/teams/index.js?id=44c5cbad59415d6d1ffc",
+    "/scripts/tickets/chat.js": "/scripts/tickets/chat.js?id=51b6c536f7fff8771277",
+    "/scripts/tickets/index.js": "/scripts/tickets/index.js?id=0e8d2e16b44ad5a03dc3",
+    "/scripts/users/course_details.js": "/scripts/users/course_details.js?id=9cd81df681a0d4484023",
+    "/scripts/users/import.js": "/scripts/users/import.js?id=4ba0cae6b6b1c2b0faf6",
+    "/scripts/users/index.js": "/scripts/users/index.js?id=5e7d2998bb4cc2833d2a",
+    "/css/build.min.css": "/css/build.min.css?id=cb05df4222bb12efb46c"
+}

@@ -1,0 +1,39 @@
+<html><head>
+<title>Progress Saved</title>
+<style media="screen">
+	body { margin:0; padding:20px; }
+	#top,#bottom,#left,#right { position:fixed; background:#DFE5EA; }
+	#top,#bottom { left:0; width:100%; height:16px; }
+	#top { top:0; }
+	#bottom { bottom:0; }
+	#left,#right { top:0; height:100%; width:16px; }
+	#left { left:0; }
+	#right { right:0; }
+	#content { text-align:center; width:100%; color:#555555; font-family:'Lucida Grande','Helvetica Neue',Helvetica,Arial,sans-serif;}
+	#content p { font-size:1.2em; width:70%; margin:auto; }
+</style>
+<!--[if lte IE 6]>
+<style media="screen">
+	body { border: solid #DFE5EA 16px; }
+	#left,#right,#top,#bottom { display: none; }
+</style>
+<![endif]-->
+<script>
+    setTimeout(function timeout() {
+          window.close();              
+      }, 2000);
+</script>
+</head>
+<body>
+	<div id="content">
+		<h1>Progress saved...</h1>
+		<p>Your progress has been saved. This window will be closed in few seconds.</p>
+	</div>
+		
+	<div id="top"></div>
+	<div id="bottom"></div>
+	<div id="left"></div>
+	<div id="right"></div>
+
+
+</body></html>

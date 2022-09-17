@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  	<title> Contents </title>
+  	<script type="text/javascript" src="jquery.min.js"></script>
+	<script type="text/javascript" src="purl.js"></script>
+	<script type="text/javascript" src="api.js"></script>
+	<script type="text/javascript" src="main.js"></script>   
+	<script type="text/javascript">
+		var url = $.url(); window.url = url;
+		var params = url.data.param.query;	
+		var url = params.url;
+
+		if (params.p == 1)
+			url = window.location.protocol + '//' + window.location.host + "/scorm_test/" + url;
+		 
+		document.write('<frameset>');
+		document.write('<frame src="' + url + '">');
+		document.write('</frame></frameset>');
+	</script>
+ </head>
+
+ <body>
+  
+ </body>
+</html>

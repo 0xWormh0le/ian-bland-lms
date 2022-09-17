@@ -1,0 +1,27 @@
+.btn-sign-in-with-ms {
+  background-image: url("/img/sign-in-with-ms.svg");
+  display: inline-block;
+  width: 215px;
+  height: 41px;
+  transition: -webkit-filter ease 0.5s;
+  transition: filter ease 0.5s;
+  transition: filter ease 0.5s, -webkit-filter ease 0.5s;
+}
+
+.btn-sign-in-with-ms:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+.img-aad-desc {
+  height: 200px;
+  margin: 5px;
+  padding: 3px;
+  border-radius: 3px;
+  border: 2px solid;
+}
+
+table.datatable {
+  width: 100% !important;
+}
+
